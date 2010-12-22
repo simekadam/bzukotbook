@@ -1,0 +1,94 @@
+body{
+	width:  61%;
+	font-family: 'OldStandardTTRegular';
+	font-size: 1.5em;
+	text-align: left;
+}
+div#header{
+	font-family: 'AirstreamRegular';
+	font-size: 3em;
+	color: #2351c5;
+}
+div.statusMessage{
+	padding-left: 60px;
+	position: relative;
+	font-size: 0.6em;
+	width: 61%;
+}
+img.profilePicture{
+	float: left;
+}
+div.comments{
+	padding-left: 60px;
+	display: none;
+	font-size: 0.5em;
+}
+div.post{
+	height: auto;
+	width: auto;
+	position: relative;
+	min-height: 60px;
+}
+div.post_user{
+	color: #2351c5;
+	padding-left: 60px;
+	font-size: 0.6em;
+	font-weight: bold;	
+}
+@font-face {
+	font-family: 'AirstreamRegular';
+	src: url('../fonts/airstrea-webfont.eot');
+	src: local('☺'), url('../fonts/airstrea-webfont.woff') format('woff'), url('../fonts/airstrea-webfont.ttf') format('truetype'), url('../fonts/airstrea-webfont.svg#webfontOmTRiAY7') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'KelmscottRomanRegular';
+	src: url('../fonts/KELMSCOT-webfont.eot');
+	src: local('☺'), url('../fonts/KELMSCOT-webfont.woff') format('woff'), url('../fonts/KELMSCOT-webfont.ttf') format('truetype'), url('../fonts/KELMSCOT-webfont.svg#webfontpth0wLW0') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OldStandardTTRegular';
+	src: url('../OldStandard-Regular-webfont.eot');
+	src: local('☺'), url('../OldStandard-Regular-webfont.woff') format('woff'), url('../OldStandard-Regular-webfont.ttf') format('truetype'), url('../OldStandard-Regular-webfont.svg#webfontKLPxhmOi') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OldStandardTTItalic';
+	src: url('../OldStandard-Italic-webfont.eot');
+	src: local('☺'), url('../OldStandard-Italic-webfont.woff') format('woff'), url('../OldStandard-Italic-webfont.ttf') format('truetype'), url('../OldStandard-Italic-webfont.svg#webfontOzpfc3xp') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OldStandardTTBold';
+	src: url('../OldStandard-Bold-webfont.eot');
+	src: local('☺'), url('../OldStandard-Bold-webfont.woff') format('woff'), url('../OldStandard-Bold-webfont.ttf') format('truetype'), url('../OldStandard-Bold-webfont.svg#webfontWjkO9MPh') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#header ul {
+	list-style-type: none;
+}
+
+#header ul li {
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+#ajax-spinner {
+	display: none;
+}

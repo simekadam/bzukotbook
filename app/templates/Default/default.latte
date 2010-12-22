@@ -1,0 +1,18 @@
+{block #statuses}
+{snippet zkouska}
+{foreach $statuses['data'] as $status}
+<div class="post">
+    <img alt=""  class="profilePicture" src="http://graph.facebook.com/{$status['from']['id']}/picture"/>
+    <div class="post_user">{$status['from']['name']}</div>
+    <div class="statusMessage">{$status['message']}</div>
+          {ifset $status['comments']}
+            {foreach $status['comments']['data'] as $datas}
+    <div class="comments">{$datas['message']}</div>
+            {/foreach}
+          {/ifset}
+          {ifset $status['likes']}
+          {/ifset}
+</div>
+{/foreach}
+{/snippet zkouska}
+{/block}
