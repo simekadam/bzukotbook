@@ -1,0 +1,22 @@
+{block #statuses}
+{snippet zkouska}
+
+{foreach $newsFeedDatas['data'] as $news}
+{if ($news['type'] == "status")}
+<div class="post">
+    <img alt=""  class="profilePicture" src="http://graph.facebook.com/{$news['from']['id']}/picture"/>
+    <div class="post_user">{$news['from']['name']}</div>
+    <div class="statusMessage">{$news['message']}</div>
+          {ifset $news['comments']['data']}
+            {foreach $news['comments']['data'] as $datas}
+    <div class="comments">{$datas['message']}</div>
+            {/foreach}
+          {/ifset}
+          {ifset $status['likes']}
+          {/ifset}
+</div>
+{/if}
+{dump $news['likes']}
+{/foreach}
+{/snippet zkouska}
+{/block}

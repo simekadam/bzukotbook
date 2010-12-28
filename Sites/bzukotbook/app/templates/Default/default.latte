@@ -1,0 +1,27 @@
+{block #statuses}
+{snippet zkouska}
+{foreach $statuses['data'] as $status}
+<div class="post">
+    <img alt=""  class="profilePicture" src="http://graph.facebook.com/{$status['from']['id']}/picture"/>
+    <div class="postSubDiv">
+    <div class="post_user">{$status['from']['name']}</div>
+    <div class="statusMessage">{$status['message']}</div>
+          {ifset $status['comments']}
+            {foreach $status['comments']['data'] as $datas}
+   
+    <div class="comments">{$datas['message']}</div>
+            {/foreach}
+          {/ifset}
+    <div class="likeTag">
+          {ifset $status['likes']}
+    {if count($status['likes']['data'])>0}
+            {$status['likes']['data'][0]['name']}{if count($status['likes']['data'])>1} and {? echo(count($status['likes']['data'])-1)} others{/if} like this.
+         {/if}
+                      {/ifset}
+<span class="likeThis"><a class="ajax" id="clickMe" href="{link like!, $ouser['id']."_".$status['id']}">Like</a></span>
+    </div>
+    </div>
+</div>
+{/foreach}
+{/snippet}
+{/block}
