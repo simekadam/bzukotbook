@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="robots" content="noindex,noarchive">
+	<meta name="generator" content="Nette Framework">
+
+	<title>InvalidStateException</title><!-- Unable to write to directory '/Users/simekadam/Sites/SugarBook/document_root/../temp/cache'. Make this directory writable. -->
+
+	<style type="text/css" class="nette">body{margin:0 0 2em;padding:0}#netteBluescreen{font:9pt/1.5 Verdana,sans-serif;background:white;color:#333;position:absolute;left:0;top:0;width:100%;z-index:23178;text-align:left}#netteBluescreen *{font:inherit;color:inherit;background:transparent;border:none;margin:0;padding:0;text-align:inherit;text-indent:0}#netteBluescreen b{font-weight:bold}#netteBluescreen i{font-style:italic}#netteBluescreenIcon{position:absolute;right:.5em;top:.5em;z-index:23179;text-decoration:none;background:#CD1818;padding:3px}#netteBluescreenError{background:#CD1818;color:white;font:13pt/1.5 Verdana,sans-serif!important;display:block}#netteBluescreen h1{font-size:18pt;font-weight:normal;text-shadow:1px 1px 0 rgba(0,0,0,.4);margin:.7em 0}#netteBluescreen h2{font:14pt/1.5 sans-serif!important;color:#888;margin:.6em 0}#netteBluescreen a{text-decoration:none;color:#328ADC;padding:2px 4px;margin:-2px -4px}#netteBluescreen a abbr{font-family:sans-serif;color:#BBB}#netteBluescreen h3{font:bold 10pt/1.5 Verdana,sans-serif!important;margin:1em 0;padding:0}#netteBluescreen p,#netteBluescreen pre{margin:.8em 0}#netteBluescreen pre,#netteBluescreen code,#netteBluescreen table{font:9pt/1.5 Consolas,monospace!important}#netteBluescreen pre,#netteBluescreen table{background:#FDF5CE;padding:.4em .7em;border:1px dotted silver;overflow:auto}#netteBluescreen table pre{padding:0;margin:0;border:none}#netteBluescreen pre.nette-dump span{color:#C22}#netteBluescreen pre.nette-dump a{color:#333}#netteBluescreen div.panel{padding:1px 25px}#netteBluescreen div.inner{background:#F4F3F1;padding:.1em 1em 1em;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px}#netteBluescreen table{border-collapse:collapse;width:100%}#netteBluescreen .outer{overflow:auto}#netteBluescreen td,#netteBluescreen th{vertical-align:top;text-align:left;padding:2px 6px;border:1px solid #e6dfbf}#netteBluescreen th{width:10%;font-weight:bold}#netteBluescreen tr:nth-child(2n),#netteBluescreen tr:nth-child(2n) pre{background-color:#F7F0CB}#netteBluescreen ol{margin:1em 0;padding-left:2.5em}#netteBluescreen ul{font:7pt/1.5 Verdana,sans-serif!important;padding:2em 4em;margin:1em 0 0;color:#777;background:#F6F5F3 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAAAjCAMAAADbuxbOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADBQTFRF/fz24d7Y7Onj5uLd9vPu3drUzMvG09LN39zW8e7o2NbQ3NnT29jS0M7J1tXQAAAApvmsFgAAABB0Uk5T////////////////////AOAjXRkAAAKlSURBVHja7FbbsqQgDAwENEgc//9vN+SCWDtbtXPmZR/Wc6o02mlC58LA9ckFAOszvMV8xNgyUjyXhojfMVKvRL0ZHavxXYy5JrmchMdzou8YlTClxajtK8ZGGpWRoBr1+gFjKfHkJPbizabLgzE3pH7Iu4K980xgFvlrVzMZoVBWhtvouCDdcTDmTgMCJdVxJ9MKO6XxnliM7hxi5lbj2ZVM4l8DqYyKoNLYcfqBB1/LpHYxEcfVG6ZpMDgyFUVWY/Q1sSYPpIdSAKWqLWL0XqWiMWc4hpH0OQOMOAgdycY4N9Sb7wWANQs3rsDSdLAYiuxi5siVfOhBWIrtH0G3kNaF/8Q4kCPE1kMucG/ZMUBUCOgiKJkPuWWTLGVgLGpwns1DraUayCtoBqERyaYtVsm85NActRooezvSLO/sKZP/nq8n4+xcyjNsRu8zW6KWpdb7wjiQd4WrtFZYFiKHENSmWp6xshh96c2RQ+c7Lt+qbijyEjHWUJ/pZsy8MGIUuzNiPySK2Gqoh6ZTRF6ko6q3nVTkaA//itIrDpW6l3SLo8juOmqMXkYknu5FdQxWbhCfKHEGDhxxyTVaXJF3ZjSl3jMksjSOOKmne9pI+mcG5QvaUJhI9HpkmRo2NpCrDJvsktRhRE2MM6F2n7dt4OaMUq8bCctk0+PoMRzL+1l5PZ2eyM/Owr86gf8z/tOM53lom5+nVcFuB+eJVzlXwAYy9TZ9s537tfqcsJWbEU4nBngZo6FfO9T9CdhfBtmk2dLiAy8uS4zwOpMx2HqYbTC+amNeAYTpsP4SIgvWfUBWXxn3CMHW3ffd7k3+YIkx7w0t/CVGvcPejoeOlzOWzeGbawOHqXQGUTMZRcfj4XPCgW9y/fuvVn8zD9P1QHzv80uAAQA0i3Jer7Jr7gAAAABJRU5ErkJggg==') 99% 10px no-repeat;border-top:1px solid #DDD}#netteBluescreen .highlight{background:#CD1818;color:white;font-weight:bold;font-style:normal;display:block;padding:0 .4em;margin:0 -.4em}#netteBluescreen .line{color:#9F9C7F;font-weight:normal;font-style:normal}#netteBluescreen a[href^=editor\:]{color:inherit;border-bottom:1px dotted #328ADC}</style>
+</head>
+
+
+
+<body>
+<div id="netteBluescreen">
+	<a id="netteBluescreenIcon" href="#" rel="next"><abbr>&#x25bc;</abbr></a
+
+	><div>
+		<div id="netteBluescreenError" class="panel">
+			<h1>InvalidStateException</h1>
+
+			<p>Unable to write to directory '/Users/simekadam/Sites/SugarBook/document_root/../temp/cache'. Make this directory writable.</p>
+		</div>
+
+
+
+				
+			
+												<div class="panel">
+			<h2><a href="#" rel="netteBsPnl1">Source file <abbr>&#x25ba;</abbr></a></h2>
+
+			<div id="netteBsPnl1" class="nette-collapsed inner">
+				<p><b>File:</b> <a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FCaching%2FFileStorage.php&amp;line=77">				/Users/simekadam/Sites/SugarBook/libs/Nette/Caching/FileStorage.php</a> &nbsp; <b>Line:</b> 77</p>
+				<pre><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>70:</span>    &nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #000">__construct</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$dir</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Context&nbsp;$context&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">NULL</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>71:</span>    &nbsp;&nbsp;&nbsp;&nbsp;{
+<span class='line'>72:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">$useDirectories&nbsp;</span><span style="color: #D24; font-weight: bold">===&nbsp;</span><span style="color: #000">NULL</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='line'>73:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #999; font-style: italic">//&nbsp;checks&nbsp;whether&nbsp;directory&nbsp;is&nbsp;writable
+<span class='line'>74:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$uniq&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">uniqid</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'_'</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">TRUE</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>75:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">umask</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">0000</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>76:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!@</span><span style="color: #000">mkdir</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">"</span><span style="color: #000">$dir</span><span style="color: #080">/</span><span style="color: #000">$uniq</span><span style="color: #080">"</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">0777</span><span style="color: #D24; font-weight: bold">))&nbsp;{&nbsp;</span><span style="color: #999; font-style: italic">//&nbsp;@&nbsp;-&nbsp;is&nbsp;escalated&nbsp;to&nbsp;exception
+<span class='highlight'>77:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;\InvalidStateException("Unable&nbsp;to&nbsp;write&nbsp;to&nbsp;directory&nbsp;'$dir'.&nbsp;Make&nbsp;this&nbsp;directory&nbsp;writable.");
+</span></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #000"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"><span class='line'>78:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>79:</span>    
+<span class='line'>80:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #999; font-style: italic">//&nbsp;tests&nbsp;subdirectory&nbsp;mode
+<span class='line'>81:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">$useDirectories&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;!</span><span style="color: #000">ini_get</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'safe_mode'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>82:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">$useDirectories&nbsp;</span><span style="color: #D24; font-weight: bold">&amp;&amp;&nbsp;@</span><span style="color: #000">file_put_contents</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">"</span><span style="color: #000">$dir</span><span style="color: #080">/</span><span style="color: #000">$uniq</span><span style="color: #080">/_"</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #080">''</span><span style="color: #D24; font-weight: bold">)&nbsp;!==&nbsp;</span><span style="color: #000">FALSE</span><span style="color: #D24; font-weight: bold">)&nbsp;{&nbsp;</span><span style="color: #999; font-style: italic">//&nbsp;@&nbsp;-&nbsp;error&nbsp;is&nbsp;expected
+<span class='line'>83:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">self</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">$useDirectories&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">TRUE</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>84:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">unlink</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">"</span><span style="color: #000">$dir</span><span style="color: #080">/</span><span style="color: #000">$uniq</span><span style="color: #080">/_"</span><span style="color: #D24; font-weight: bold">);
+</span></span></code></pre>
+			</div></div>
+			
+
+
+									<div class="panel">
+				<h2><a href="#" rel="netteBsPnl2">Call stack <abbr>&#x25bc;</abbr></a></h2>
+
+				<div id="netteBsPnl2" class="inner">
+				<ol>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FEnvironment%2FConfigurator.php&amp;line=321" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Environment/Configurator.php">
+						Environment/<b>Configurator.php</b></a> (321)					
+					<a href="#" rel="netteBsSrc1-0">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Caching\FileStorage->					__construct
+					(<a href="#" rel="netteBsArgs1-0">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-0">
+						<table>
+						<tr><th>$dir</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/document_root/../temp/cache" (60)
+</pre></td></tr>
+<tr><th>$context</th><td><pre class="nette-dump"><a href='#' rel='next'><span>Nette\Context</span>(3) <abbr>&#x25bc;</abbr> </a><code>{
+   <a href='#' rel='next'>"registry" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"nette\caching\icachejournal" => NULL
+   }</code>
+   "factories" <span>private</span> => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"nette\caching\icachejournal" => <span>array</span>(3) <abbr>&#x25bc;</abbr> </a><code>[
+         0 => <span>array</span>(2) [ ... ]
+         1 => TRUE
+         2 => NULL
+      ]</code>
+   }</code>
+   "frozen" <span>private</span> => FALSE
+}</code>
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-0"><code><span style="color: #06B"><span style="color: #999; font-style: italic"><span class='line'>314:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #D24; font-weight: bold">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #000">createCacheStorage</span><span style="color: #D24; font-weight: bold">()
+<span class='line'>315:</span>    &nbsp;&nbsp;&nbsp;&nbsp;{
+<span class='line'>316:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$context&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;new&nbsp;</span><span style="color: #000">Context</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>317:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$context</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">addService</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'Nette\\Caching\\ICacheJournal'</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">Environment</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">getContext</span><span style="color: #D24; font-weight: bold">());
+<span class='line'>318:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$dir&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">Environment</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">getVariable</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'tempDir'</span><span style="color: #D24; font-weight: bold">)&nbsp;.&nbsp;</span><span style="color: #080">'/cache'</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>319:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">umask</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">0000</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>320:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@</span><span style="color: #000">mkdir</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$dir</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">0777</span><span style="color: #D24; font-weight: bold">);&nbsp;</span><span style="color: #999; font-style: italic">//&nbsp;@&nbsp;-&nbsp;directory&nbsp;may&nbsp;exists
+<span class='highlight'>321:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;new&nbsp;Nette\Caching\FileStorage($dir,&nbsp;$context);
+</span></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>322:</span>    &nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>323:</span>    
+<span class='line'>324:</span>    
+<span class='line'>325:</span>    
+<span class='line'>326:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #999; font-style: italic">/**
+<span class='line'>327:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;Nette\Caching\ICacheJournal
+<span class='line'>328:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<i>inner-code</i>					
+					
+					Nette\Configurator::					createCacheStorage
+					(<a href="#" rel="netteBsArgs1-1">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-1">
+						<table>
+						<tr><th>#0</th><td><pre class="nette-dump">NULL
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FUtils%2FCallback.php&amp;line=60" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Callback.php">
+						Utils/<b>Callback.php</b></a> (60)					
+					<a href="#" rel="netteBsSrc1-2">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+										call_user_func_array
+					(<a href="#" rel="netteBsArgs1-2">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-2">
+						<table>
+						<tr><th>$function_name</th><td><pre class="nette-dump"><a href='#' rel='next'><span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>[
+   0 => "Nette\Configurator" (18)
+   1 => "createCacheStorage" (18)
+]</code>
+</pre></td></tr>
+<tr><th>$parameters</th><td><pre class="nette-dump"><a href='#' rel='next'><span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+   0 => NULL
+]</code>
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-2"><code><span style="color: #06B"><span style="color: #999; font-style: italic"><span class='line'>53:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/
+<span class='line'>54:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #D24; font-weight: bold">public&nbsp;function&nbsp;</span><span style="color: #000">__invoke</span><span style="color: #D24; font-weight: bold">()
+<span class='line'>55:</span>    &nbsp;&nbsp;&nbsp;&nbsp;{
+<span class='line'>56:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #000">is_callable</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">cb</span><span style="color: #D24; font-weight: bold">))&nbsp;{
+<span class='line'>57:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;\</span><span style="color: #000">InvalidStateException</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">"Callback&nbsp;'</span><span style="color: #000">$this</span><span style="color: #080">'&nbsp;is&nbsp;not&nbsp;callable."</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>58:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>59:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$args&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">func_get_args</span><span style="color: #D24; font-weight: bold">();
+<span class='highlight'>60:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;call_user_func_array($this-&gt;cb,&nbsp;$args);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>61:</span>    &nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>62:</span>    
+<span class='line'>63:</span>    
+<span class='line'>64:</span>    
+<span class='line'>65:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #999; font-style: italic">/**
+<span class='line'>66:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Invokes&nbsp;callback.
+<span class='line'>67:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;mixed
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FUtils%2FContext.php&amp;line=138" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Context.php">
+						Utils/<b>Context.php</b></a> (138)					
+					<a href="#" rel="netteBsSrc1-3">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Callback->					__invoke
+					(<a href="#" rel="netteBsArgs1-3">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-3">
+						<table>
+						<tr><th>#0</th><td><pre class="nette-dump">NULL
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-3"><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>131:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>132:</span>    
+<span class='line'>133:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{&nbsp;</span><span style="color: #999; font-style: italic">//&nbsp;factory&nbsp;callback
+<span class='line'>134:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$factory&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">callback</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$factory</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>135:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #000">$factory</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">isCallable</span><span style="color: #D24; font-weight: bold">())&nbsp;{
+<span class='line'>136:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;\</span><span style="color: #000">InvalidStateException</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">"Cannot&nbsp;instantiate&nbsp;service&nbsp;'</span><span style="color: #000">$name</span><span style="color: #080">',&nbsp;handler&nbsp;'</span><span style="color: #000">$factory</span><span style="color: #080">'&nbsp;is&nbsp;not&nbsp;callable."</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>137:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='highlight'>138:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$service&nbsp;=&nbsp;$factory($options);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>139:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #000">is_object</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$service</span><span style="color: #D24; font-weight: bold">))&nbsp;{
+<span class='line'>140:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #000">AmbiguousServiceException</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">"Cannot&nbsp;instantiate&nbsp;service&nbsp;'</span><span style="color: #000">$name</span><span style="color: #080">',&nbsp;value&nbsp;returned&nbsp;by&nbsp;'</span><span style="color: #000">$factory</span><span style="color: #080">'&nbsp;is&nbsp;not&nbsp;object."</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>141:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>142:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>143:</span>    
+<span class='line'>144:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #000">$singleton</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='line'>145:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">registry</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">$lower</span><span style="color: #D24; font-weight: bold">]&nbsp;=&nbsp;</span><span style="color: #000">$service</span><span style="color: #D24; font-weight: bold">;
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FEnvironment%2FEnvironment.php&amp;line=327" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Environment/Environment.php">
+						Environment/<b>Environment.php</b></a> (327)					
+					<a href="#" rel="netteBsSrc1-4">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Context->					getService
+					(<a href="#" rel="netteBsArgs1-4">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-4">
+						<table>
+						<tr><th>$name</th><td><pre class="nette-dump">"Nette\Caching\ICacheStorage" (27)
+</pre></td></tr>
+<tr><th>$options</th><td><pre class="nette-dump">NULL
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-4"><code><span style="color: #06B"><span style="color: #999; font-style: italic"><span class='line'>320:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Gets&nbsp;the&nbsp;service&nbsp;object&nbsp;of&nbsp;the&nbsp;specified&nbsp;type.
+<span class='line'>321:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;&nbsp;string&nbsp;service&nbsp;name
+<span class='line'>322:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;&nbsp;array&nbsp;&nbsp;options&nbsp;in&nbsp;case&nbsp;service&nbsp;is&nbsp;not&nbsp;singleton
+<span class='line'>323:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;object
+<span class='line'>324:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/
+<span class='line'>325:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #D24; font-weight: bold">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #000">getService</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">,&nbsp;array&nbsp;</span><span style="color: #000">$options&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">NULL</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>326:</span>    &nbsp;&nbsp;&nbsp;&nbsp;{
+<span class='highlight'>327:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;self::getContext()-&gt;getService($name,&nbsp;$options);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>328:</span>    &nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>329:</span>    
+<span class='line'>330:</span>    
+<span class='line'>331:</span>    
+<span class='line'>332:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #999; font-style: italic">/**
+<span class='line'>333:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Adds&nbsp;new&nbsp;Environment::get&lt;Service&gt;()&nbsp;method.
+<span class='line'>334:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;&nbsp;string&nbsp;&nbsp;service&nbsp;name
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FEnvironment%2FConfigurator.php&amp;line=361" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Environment/Configurator.php">
+						Environment/<b>Configurator.php</b></a> (361)					
+					<a href="#" rel="netteBsSrc1-5">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Environment::					getService
+					(<a href="#" rel="netteBsArgs1-5">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-5">
+						<table>
+						<tr><th>$name</th><td><pre class="nette-dump">"Nette\Caching\ICacheStorage" (27)
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-5"><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>354:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #999; font-style: italic">/**
+<span class='line'>355:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;Nette\Loaders\RobotLoader
+<span class='line'>356:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/
+<span class='line'>357:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #D24; font-weight: bold">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #000">createRobotLoader</span><span style="color: #D24; font-weight: bold">(array&nbsp;</span><span style="color: #000">$options&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">NULL</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>358:</span>    &nbsp;&nbsp;&nbsp;&nbsp;{
+<span class='line'>359:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$loader&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;new&nbsp;</span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Loaders</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">RobotLoader</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>360:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$loader</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">autoRebuild&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;isset(</span><span style="color: #000">$options</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'autoRebuild'</span><span style="color: #D24; font-weight: bold">])&nbsp;?&nbsp;</span><span style="color: #000">$options</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'autoRebuild'</span><span style="color: #D24; font-weight: bold">]&nbsp;:&nbsp;!</span><span style="color: #000">Environment</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">isProduction</span><span style="color: #D24; font-weight: bold">();
+<span class='highlight'>361:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$loader-&gt;setCacheStorage(Environment::getService('Nette\\Caching\\ICacheStorage'));
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"><span class='line'>362:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(isset(</span><span style="color: #000">$options</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'directory'</span><span style="color: #D24; font-weight: bold">]))&nbsp;{
+<span class='line'>363:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$loader</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">addDirectory</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$options</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #080">'directory'</span><span style="color: #D24; font-weight: bold">]);
+<span class='line'>364:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{
+<span class='line'>365:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(array(</span><span style="color: #080">'appDir'</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #080">'libsDir'</span><span style="color: #D24; font-weight: bold">)&nbsp;as&nbsp;</span><span style="color: #000">$var</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='line'>366:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #000">$dir&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">Environment</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">getVariable</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$var</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">NULL</span><span style="color: #D24; font-weight: bold">))&nbsp;{
+<span class='line'>367:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$loader</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">addDirectory</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$dir</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>368:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<i>inner-code</i>					
+					
+					Nette\Configurator::					createRobotLoader
+					(<a href="#" rel="netteBsArgs1-6">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-6">
+						<table>
+						<tr><th>$options</th><td><pre class="nette-dump"><a href='#' rel='next'><span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+   <a href='#' rel='next'>"directory" => <span>Nette\Config\Config</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+      "0" => "/Users/simekadam/Sites/SugarBook/document_root/../app" (53)
+      "1" => "/Users/simekadam/Sites/SugarBook/document_root/../libs" (54)
+   }</code>
+}</code>
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FUtils%2FCallback.php&amp;line=60" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Callback.php">
+						Utils/<b>Callback.php</b></a> (60)					
+					<a href="#" rel="netteBsSrc1-7">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+										call_user_func_array
+					(<a href="#" rel="netteBsArgs1-7">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-7">
+						<table>
+						<tr><th>$function_name</th><td><pre class="nette-dump"><a href='#' rel='next'><span>array</span>(2) <abbr>&#x25bc;</abbr> </a><code>[
+   0 => "Nette\Configurator" (18)
+   1 => "createRobotLoader" (17)
+]</code>
+</pre></td></tr>
+<tr><th>$parameters</th><td><pre class="nette-dump"><a href='#' rel='next'><span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>[
+   <a href='#' rel='next'>0 => <span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+      <a href='#' rel='next'>"directory" => <span>Nette\Config\Config</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+         "0" => "/Users/simekadam/Sites/SugarBook/document_root/../app" (53)
+         "1" => "/Users/simekadam/Sites/SugarBook/document_root/../libs" (54)
+      }</code>
+   }</code>
+]</code>
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-7"><code><span style="color: #06B"><span style="color: #999; font-style: italic"><span class='line'>53:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/
+<span class='line'>54:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #D24; font-weight: bold">public&nbsp;function&nbsp;</span><span style="color: #000">__invoke</span><span style="color: #D24; font-weight: bold">()
+<span class='line'>55:</span>    &nbsp;&nbsp;&nbsp;&nbsp;{
+<span class='line'>56:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #000">is_callable</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">cb</span><span style="color: #D24; font-weight: bold">))&nbsp;{
+<span class='line'>57:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;\</span><span style="color: #000">InvalidStateException</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">"Callback&nbsp;'</span><span style="color: #000">$this</span><span style="color: #080">'&nbsp;is&nbsp;not&nbsp;callable."</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>58:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>59:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$args&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">func_get_args</span><span style="color: #D24; font-weight: bold">();
+<span class='highlight'>60:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;call_user_func_array($this-&gt;cb,&nbsp;$args);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>61:</span>    &nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>62:</span>    
+<span class='line'>63:</span>    
+<span class='line'>64:</span>    
+<span class='line'>65:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #999; font-style: italic">/**
+<span class='line'>66:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Invokes&nbsp;callback.
+<span class='line'>67:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;mixed
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FUtils%2FContext.php&amp;line=138" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Context.php">
+						Utils/<b>Context.php</b></a> (138)					
+					<a href="#" rel="netteBsSrc1-8">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Callback->					__invoke
+					(<a href="#" rel="netteBsArgs1-8">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-8">
+						<table>
+						<tr><th>#0</th><td><pre class="nette-dump"><a href='#' rel='next'><span>array</span>(1) <abbr>&#x25bc;</abbr> </a><code>{
+   <a href='#' rel='next'>"directory" => <span>Nette\Config\Config</span>(2) <abbr>&#x25bc;</abbr> </a><code>{
+      "0" => "/Users/simekadam/Sites/SugarBook/document_root/../app" (53)
+      "1" => "/Users/simekadam/Sites/SugarBook/document_root/../libs" (54)
+   }</code>
+}</code>
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-8"><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>131:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>132:</span>    
+<span class='line'>133:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{&nbsp;</span><span style="color: #999; font-style: italic">//&nbsp;factory&nbsp;callback
+<span class='line'>134:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$factory&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">callback</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$factory</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>135:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #000">$factory</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">isCallable</span><span style="color: #D24; font-weight: bold">())&nbsp;{
+<span class='line'>136:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;\</span><span style="color: #000">InvalidStateException</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">"Cannot&nbsp;instantiate&nbsp;service&nbsp;'</span><span style="color: #000">$name</span><span style="color: #080">',&nbsp;handler&nbsp;'</span><span style="color: #000">$factory</span><span style="color: #080">'&nbsp;is&nbsp;not&nbsp;callable."</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>137:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='highlight'>138:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$service&nbsp;=&nbsp;$factory($options);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>139:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #000">is_object</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$service</span><span style="color: #D24; font-weight: bold">))&nbsp;{
+<span class='line'>140:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #000">AmbiguousServiceException</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">"Cannot&nbsp;instantiate&nbsp;service&nbsp;'</span><span style="color: #000">$name</span><span style="color: #080">',&nbsp;value&nbsp;returned&nbsp;by&nbsp;'</span><span style="color: #000">$factory</span><span style="color: #080">'&nbsp;is&nbsp;not&nbsp;object."</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>141:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>142:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>143:</span>    
+<span class='line'>144:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #000">$singleton</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='line'>145:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">$this</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">registry</span><span style="color: #D24; font-weight: bold">[</span><span style="color: #000">$lower</span><span style="color: #D24; font-weight: bold">]&nbsp;=&nbsp;</span><span style="color: #000">$service</span><span style="color: #D24; font-weight: bold">;
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FEnvironment%2FConfigurator.php&amp;line=245" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Environment/Configurator.php">
+						Environment/<b>Configurator.php</b></a> (245)					
+					<a href="#" rel="netteBsSrc1-9">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Context->					getService
+					(<a href="#" rel="netteBsArgs1-9">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-9">
+						<table>
+						<tr><th>$name</th><td><pre class="nette-dump">"Nette\Loaders\RobotLoader" (25)
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-9"><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'>238:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach(</span><span style="color: #000">$config</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">mode&nbsp;</span><span style="color: #D24; font-weight: bold">as&nbsp;</span><span style="color: #000">$mode&nbsp;</span><span style="color: #D24; font-weight: bold">=&gt;&nbsp;</span><span style="color: #000">$state</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='line'>239:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #000">Environment</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">setMode</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$mode</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">$state</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>240:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>241:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>242:</span>    
+<span class='line'>243:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #999; font-style: italic">//&nbsp;auto-start&nbsp;services
+<span class='line'>244:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #D24; font-weight: bold">foreach&nbsp;(</span><span style="color: #000">$runServices&nbsp;</span><span style="color: #D24; font-weight: bold">as&nbsp;</span><span style="color: #000">$name</span><span style="color: #D24; font-weight: bold">)&nbsp;{
+<span class='highlight'>245:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$context-&gt;getService($name);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>246:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>247:</span>    
+<span class='line'>248:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #000">$config</span><span style="color: #D24; font-weight: bold">;
+<span class='line'>249:</span>    &nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>250:</span>    
+<span class='line'>251:</span>    
+<span class='line'>252:</span>    
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Flibs%2FNette%2FEnvironment%2FEnvironment.php&amp;line=464" title="/Users/simekadam/Sites/SugarBook/libs/Nette/Environment/Environment.php">
+						Environment/<b>Environment.php</b></a> (464)					
+					<a href="#" rel="netteBsSrc1-10">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Configurator->					loadConfig
+					(<a href="#" rel="netteBsArgs1-10">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-10">
+						<table>
+						<tr><th>$file</th><td><pre class="nette-dump">NULL
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-10"><code><span style="color: #06B"><span style="color: #999; font-style: italic"><span class='line'>457:</span>    &nbsp;&nbsp;&nbsp;&nbsp;/**
+<span class='line'>458:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Loads&nbsp;global&nbsp;configuration&nbsp;from&nbsp;file&nbsp;and&nbsp;process&nbsp;it.
+<span class='line'>459:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;&nbsp;string|Nette\Config\Config&nbsp;&nbsp;file&nbsp;name&nbsp;or&nbsp;Config&nbsp;object
+<span class='line'>460:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;\ArrayObject
+<span class='line'>461:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/
+<span class='line'>462:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #D24; font-weight: bold">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #000">loadConfig</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">$file&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">NULL</span><span style="color: #D24; font-weight: bold">)
+<span class='line'>463:</span>    &nbsp;&nbsp;&nbsp;&nbsp;{
+<span class='highlight'>464:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;self::$config&nbsp;=&nbsp;self::getConfigurator()-&gt;loadConfig($file);
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>465:</span>    &nbsp;&nbsp;&nbsp;&nbsp;}
+<span class='line'>466:</span>    
+<span class='line'>467:</span>    
+<span class='line'>468:</span>    
+<span class='line'>469:</span>    &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #999; font-style: italic">/**
+<span class='line'>470:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;Returns&nbsp;the&nbsp;global&nbsp;configuration.
+<span class='line'>471:</span>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;&nbsp;string&nbsp;key
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Fapp%2Fbootstrap.php&amp;line=10" title="/Users/simekadam/Sites/SugarBook/app/bootstrap.php">
+						app/<b>bootstrap.php</b></a> (10)					
+					<a href="#" rel="netteBsSrc1-11">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+					Nette\Environment::					loadConfig
+					()
+					</p>
+
+					
+
+											<pre  id="netteBsSrc1-11"><code><span style="color: #06B"><span style="color: #000"><span class='line'> 3:</span>    </span><span style="color: #D24; font-weight: bold">require_once&nbsp;</span><span style="color: #000">LIBS_DIR&nbsp;</span><span style="color: #D24; font-weight: bold">.&nbsp;</span><span style="color: #080">'/Nette/loader.php'</span><span style="color: #D24; font-weight: bold">;
+<span class='line'> 4:</span>    use&nbsp;</span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Debug</span><span style="color: #D24; font-weight: bold">;
+<span class='line'> 5:</span>    use&nbsp;</span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Environment</span><span style="color: #D24; font-weight: bold">;
+<span class='line'> 6:</span>    Use&nbsp;</span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Application</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Route</span><span style="color: #D24; font-weight: bold">;
+<span class='line'> 7:</span>    use&nbsp;</span><span style="color: #000">Nette</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">Loaders</span><span style="color: #D24; font-weight: bold">\</span><span style="color: #000">RobotLoader</span><span style="color: #D24; font-weight: bold">;
+<span class='line'> 8:</span>    </span><span style="color: #000">Debug</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">enable</span><span style="color: #D24; font-weight: bold">();
+<span class='line'> 9:</span>    
+<span class='highlight'>10:    Environment::loadConfig();
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"><span class='line'>11:</span>    
+<span class='line'>12:</span>    </span><span style="color: #000">$session&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">Environment</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">getSession</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>13:</span>    </span><span style="color: #000">$session</span><span style="color: #D24; font-weight: bold">-&gt;</span><span style="color: #000">setSavePath</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #000">APP_DIR&nbsp;</span><span style="color: #D24; font-weight: bold">.&nbsp;</span><span style="color: #080">'/sessions/'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>14:</span>    
+<span class='line'>15:</span>    </span><span style="color: #000">$application&nbsp;</span><span style="color: #D24; font-weight: bold">=&nbsp;</span><span style="color: #000">Environment</span><span style="color: #D24; font-weight: bold">::</span><span style="color: #000">getApplication</span><span style="color: #D24; font-weight: bold">();
+<span class='line'>16:</span>    </span><span style="color: #999; font-style: italic">//$application-&gt;errorPresenter&nbsp;=&nbsp;'Error';
+<span class='line'>17:</span>    //$application-&gt;catchExceptions&nbsp;=&nbsp;TRUE;
+</span></span></code></pre>
+					
+					</li>
+										<li><p>
+
+											<a href="editor://open/?file=%2FUsers%2Fsimekadam%2FSites%2FSugarBook%2Fdocument_root%2Findex.php&amp;line=16" title="/Users/simekadam/Sites/SugarBook/document_root/index.php">
+						document_root/<b>index.php</b></a> (16)					
+					<a href="#" rel="netteBsSrc1-12">source <abbr>&#x25ba;</abbr></a>&nbsp; 
+										require
+					(<a href="#" rel="netteBsArgs1-12">arguments <abbr>&#x25ba;</abbr></a>)
+					</p>
+
+											<div class="nette-collapsed outer" id="netteBsArgs1-12">
+						<table>
+						<tr><th>#0</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/app/bootstrap.php" (50)
+</pre></td></tr>
+						</table>
+						</div>
+					
+
+											<pre class="nette-collapsed" id="netteBsSrc1-12"><code><span style="color: #06B"><span style="color: #D24; font-weight: bold"><span class='line'> 9:</span>    </span><span style="color: #000">define</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'LIBS_DIR'</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">WWW_DIR&nbsp;</span><span style="color: #D24; font-weight: bold">.&nbsp;</span><span style="color: #080">'/../libs'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>10:</span>    
+<span class='line'>11:</span>    </span><span style="color: #000">define</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'TEMP_DIR'</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">WWW_DIR&nbsp;</span><span style="color: #D24; font-weight: bold">.&nbsp;</span><span style="color: #080">'/../temp'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>12:</span>    
+<span class='line'>13:</span>    </span><span style="color: #000">define</span><span style="color: #D24; font-weight: bold">(</span><span style="color: #080">'MODELS_DIR'</span><span style="color: #D24; font-weight: bold">,&nbsp;</span><span style="color: #000">WWW_DIR&nbsp;</span><span style="color: #D24; font-weight: bold">.&nbsp;</span><span style="color: #080">'/../models'</span><span style="color: #D24; font-weight: bold">);
+<span class='line'>14:</span>    
+<span class='line'>15:</span>    
+<span class='highlight'>16:    require&nbsp;APP_DIR&nbsp;.&nbsp;'/bootstrap.php';
+</span></span><span style="color: #000"></span><span style="color: #D24; font-weight: bold"></span><span style="color: #080"></span><span style="color: #D24; font-weight: bold"><span class='line'>17:</span>    
+<span class='line'>18:</span>    </span>
+</span></code></pre>
+					
+					</li>
+									</ol>
+			</div></div>
+			
+
+
+			
+
+
+			
+				
+
+
+		
+
+
+		<div class="panel">
+		<h2><a href="#" rel="netteBsPnl3">Environment <abbr>&#x25ba;</abbr></a></h2>
+
+		<div id="netteBsPnl3" class="nette-collapsed inner">
+						<h3><a href="#" rel="netteBsPnl-env-const">Constants <abbr>&#x25bc;</abbr></a></h3>
+			<div class="outer">
+			<table id="netteBsPnl-env-const">
+			<tr><th>SITE</th><td><pre class="nette-dump">""
+</pre></td></tr>
+<tr><th>WWW_DIR</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/document_root" (46)
+</pre></td></tr>
+<tr><th>APP_DIR</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/document_root/../app" (53)
+</pre></td></tr>
+<tr><th>LIBS_DIR</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/document_root/../libs" (54)
+</pre></td></tr>
+<tr><th>TEMP_DIR</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/document_root/../temp" (54)
+</pre></td></tr>
+<tr><th>MODELS_DIR</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/document_root/../models" (56)
+</pre></td></tr>
+<tr><th>NETTE</th><td><pre class="nette-dump">TRUE
+</pre></td></tr>
+<tr><th>NETTE_DIR</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/libs/Nette" (43)
+</pre></td></tr>
+<tr><th>NETTE_VERSION_ID</th><td><pre class="nette-dump">20000
+</pre></td></tr>
+<tr><th>NETTE_PACKAGE</th><td><pre class="nette-dump">"5.3" (3)
+</pre></td></tr>
+			</table>
+			</div>
+			
+
+			<h3><a href="#" rel="netteBsPnl-env-files">Included files <abbr>&#x25ba;</abbr></a> (29)</h3>
+			<div class="outer">
+			<table id="netteBsPnl-env-files" class="nette-collapsed">
+			<tr><td>/Users/simekadam/Sites/SugarBook/document_root/index.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/app/bootstrap.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/loader.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/shortcuts.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/exceptions.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Object.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Loaders/LimitedScope.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Loaders/AutoLoader.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Loaders/NetteLoader.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Debug/Debug.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Debug/DebugPanel.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Debug/IDebugPanel.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Environment/Environment.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Environment/Configurator.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Config/Config.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Config/ConfigAdapterIni.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Config/IConfigAdapter.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/ArrayTools.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Iterators/GenericRecursiveIterator.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Context.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/FreezableObject.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/IFreezable.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/IContext.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Utils/Callback.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Loaders/RobotLoader.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Caching/FileStorage.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Caching/ICacheStorage.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Debug/DebugHelpers.php</td></tr>
+<tr><td>/Users/simekadam/Sites/SugarBook/libs/Nette/Debug/templates/bluescreen.phtml</td></tr>
+			</table>
+			</div>
+
+
+			<h3>$_SERVER</h3>
+						<div class="outer">
+			<table>
+			<tr><th>HTTP_HOST</th><td><pre class="nette-dump">"85.70.231.130:555" (17)
+</pre></td></tr>
+<tr><th>HTTP_USER_AGENT</th><td><pre class="nette-dump">"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_5; en-us) AppleWebKit/533.19.4 (KHTML, like Gecko) Version/5.0.3 Safari/533.19.4" (127)
+</pre></td></tr>
+<tr><th>HTTP_ACCEPT</th><td><pre class="nette-dump">"application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5" (90)
+</pre></td></tr>
+<tr><th>HTTP_REFERER</th><td><pre class="nette-dump">"http://85.70.231.130:555/SugarBook/" (35)
+</pre></td></tr>
+<tr><th>HTTP_CACHE_CONTROL</th><td><pre class="nette-dump">"max-age=0" (9)
+</pre></td></tr>
+<tr><th>HTTP_ACCEPT_LANGUAGE</th><td><pre class="nette-dump">"en-us" (5)
+</pre></td></tr>
+<tr><th>HTTP_ACCEPT_ENCODING</th><td><pre class="nette-dump">"gzip, deflate" (13)
+</pre></td></tr>
+<tr><th>HTTP_COOKIE</th><td><pre class="nette-dump">"fbs_124815934249440=%22session_key%3D2.WHOFzg0P8ivL_6ywArj4NQ__.3600.1292875200-1586568266%26uid%3D1586568266%26expires%3D1292875200%26secret%3D4SaCl4 ... " (335)
+</pre></td></tr>
+<tr><th>HTTP_CONNECTION</th><td><pre class="nette-dump">"keep-alive" (10)
+</pre></td></tr>
+<tr><th>PATH</th><td><pre class="nette-dump">"/usr/bin:/bin:/usr/sbin:/sbin" (29)
+</pre></td></tr>
+<tr><th>SERVER_SIGNATURE</th><td><pre class="nette-dump">""
+</pre></td></tr>
+<tr><th>SERVER_SOFTWARE</th><td><pre class="nette-dump">"Apache/2.2.15 (Unix) mod_ssl/2.2.15 OpenSSL/0.9.8l DAV/2 PHP/5.3.3" (66)
+</pre></td></tr>
+<tr><th>SERVER_NAME</th><td><pre class="nette-dump">"85.70.231.130" (13)
+</pre></td></tr>
+<tr><th>SERVER_ADDR</th><td><pre class="nette-dump">"10.0.0.1" (8)
+</pre></td></tr>
+<tr><th>SERVER_PORT</th><td><pre class="nette-dump">"555" (3)
+</pre></td></tr>
+<tr><th>REMOTE_ADDR</th><td><pre class="nette-dump">"85.70.231.130" (13)
+</pre></td></tr>
+<tr><th>DOCUMENT_ROOT</th><td><pre class="nette-dump">"/Users/simekadam/Sites" (22)
+</pre></td></tr>
+<tr><th>SERVER_ADMIN</th><td><pre class="nette-dump">"you@example.com" (15)
+</pre></td></tr>
+<tr><th>SCRIPT_FILENAME</th><td><pre class="nette-dump">"/Users/simekadam/Sites/SugarBook/document_root/index.php" (56)
+</pre></td></tr>
+<tr><th>REMOTE_PORT</th><td><pre class="nette-dump">"55408" (5)
+</pre></td></tr>
+<tr><th>GATEWAY_INTERFACE</th><td><pre class="nette-dump">"CGI/1.1" (7)
+</pre></td></tr>
+<tr><th>SERVER_PROTOCOL</th><td><pre class="nette-dump">"HTTP/1.1" (8)
+</pre></td></tr>
+<tr><th>REQUEST_METHOD</th><td><pre class="nette-dump">"GET" (3)
+</pre></td></tr>
+<tr><th>QUERY_STRING</th><td><pre class="nette-dump">""
+</pre></td></tr>
+<tr><th>REQUEST_URI</th><td><pre class="nette-dump">"/SugarBook/document_root/" (25)
+</pre></td></tr>
+<tr><th>SCRIPT_NAME</th><td><pre class="nette-dump">"/SugarBook/document_root/index.php" (34)
+</pre></td></tr>
+<tr><th>PHP_SELF</th><td><pre class="nette-dump">"/SugarBook/document_root/index.php" (34)
+</pre></td></tr>
+<tr><th>REQUEST_TIME</th><td><pre class="nette-dump">1292870093
+</pre></td></tr>
+			</table>
+			</div>
+					</div></div>
+
+
+
+		<div class="panel">
+		<h2><a href="#" rel="netteBsPnl4">HTTP request <abbr>&#x25ba;</abbr></a></h2>
+
+		<div id="netteBsPnl4" class="nette-collapsed inner">
+						<h3>Headers</h3>
+			<div class="outer">
+			<table>
+			<tr><th>Host</th><td>85.70.231.130:555</td></tr>
+<tr><th>User-Agent</th><td>Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_5; en-us) AppleWebKit/533.19.4 (KHTML, like Gecko) Version/5.0.3 Safari/533.19.4</td></tr>
+<tr><th>Accept</th><td>application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5</td></tr>
+<tr><th>Referer</th><td>http://85.70.231.130:555/SugarBook/</td></tr>
+<tr><th>Cache-Control</th><td>max-age=0</td></tr>
+<tr><th>Accept-Language</th><td>en-us</td></tr>
+<tr><th>Accept-Encoding</th><td>gzip, deflate</td></tr>
+<tr><th>Cookie</th><td>fbs_124815934249440=%22session_key%3D2.WHOFzg0P8ivL_6ywArj4NQ__.3600.1292875200-1586568266%26uid%3D1586568266%26expires%3D1292875200%26secret%3D4SaCl4g_BhYyFnB_iQzDkA__%26access_token%3D124815934249440%257C2.WHOFzg0P8ivL_6ywArj4NQ__.3600.1292875200-1586568266%257CjbORI5t5a2jirC1HQoyA98Gtd-M%26sig%3Dc060be94261a1356bc737419507abbee%22</td></tr>
+<tr><th>Connection</th><td>keep-alive</td></tr>
+			</table>
+			</div>
+			
+
+						<h3>$_GET</h3>
+						<p><i>empty</i></p>
+									<h3>$_POST</h3>
+						<p><i>empty</i></p>
+									<h3>$_COOKIE</h3>
+						<div class="outer">
+			<table>
+			<tr><th>fbs_124815934249440</th><td><pre class="nette-dump">""session_key=2.WHOFzg0P8ivL_6ywArj4NQ__.3600.1292875200-1586568266&amp;uid=1586568266&amp;expires=1292875200&amp;secret=4SaCl4g_BhYyFnB_iQzDkA__&amp;access_token=1248 ... " (285)
+</pre></td></tr>
+			</table>
+			</div>
+								</div></div>
+
+
+
+		<div class="panel">
+		<h2><a href="#" rel="netteBsPnl5">HTTP response <abbr>&#x25ba;</abbr></a></h2>
+
+		<div id="netteBsPnl5" class="nette-collapsed inner">
+			<h3>Headers</h3>
+						<pre>X-Powered-By: Nette Framework<br></pre>
+					</div></div>
+
+
+		<ul>
+			<li>Report generated at 2010/12/20 19:34:53</li>
+							<li><a href="http://85.70.231.130:555/SugarBook/document_root/">http://85.70.231.130:555/SugarBook/document_root/</a></li>
+						<li>PHP 5.3.3</li>
+			<li>Apache/2.2.15 (Unix) mod_ssl/2.2.15 OpenSSL/0.9.8l DAV/2 PHP/5.3.3</li>			<li>Nette Framework 2.0-dev <i>(revision f195947 released on 2010-12-16)</i></li>		</ul>
+	</div>
+</div>
+
+<script type="text/javascript">/*<![CDATA[*/var bs=document.getElementById("netteBluescreen");document.body.appendChild(bs);document.onkeyup=function(b){b=b||window.event;b.keyCode==27&&bs.onclick({target:document.getElementById("netteBluescreenIcon")})};
+for(var i=0,styles=document.styleSheets;i<styles.length;i++)if((styles[i].owningElement||styles[i].ownerNode).className!=="nette"){styles[i].oldDisabled=styles[i].disabled;styles[i].disabled=true}else styles[i].addRule?styles[i].addRule(".nette-collapsed","display: none"):styles[i].insertRule(".nette-collapsed { display: none }",0);
+bs.onclick=function(b){b=b||window.event;for(var a=b.target||b.srcElement;a&&a.tagName&&a.tagName.toLowerCase()!=="a";)a=a.parentNode;if(!a||!a.rel)return true;for(var d=a.getElementsByTagName("abbr")[0],c=a.rel==="next"?a.nextSibling:document.getElementById(a.rel);c.nodeType!==1;)c=c.nextSibling;b=c.currentStyle?c.currentStyle.display=="none":getComputedStyle(c,null).display=="none";try{d.innerHTML=String.fromCharCode(b?9660:9658)}catch(e){}c.style.display=b?c.tagName.toLowerCase()==="code"?"inline":
+"block":"none";if(a.id==="netteBluescreenIcon"){a=0;for(d=document.styleSheets;a<d.length;a++)if((d[a].owningElement||d[a].ownerNode).className!=="nette")d[a].disabled=b?true:d[a].oldDisabled}return false};/*]]>*/</script>
+</body>
+</html>
